@@ -16,7 +16,7 @@ The contract data can be complex, but developers typically provide [get-methods]
 The TON has standard contracts (such as [TEP-62](https://github.com/ton-blockchain/TEPs/blob/master/text/0062-nft-standard.md), [TEP-74](https://github.com/ton-blockchain/TEPs/blob/master/text/0074-jettons-standard.md)), and they have predefined get-method names. 
 Therefore, you can attempt to match accounts found in the network to these standards by checking the presence of the get-methods.
 Contract standards also specify [TL-B constructor tags](https://docs.ton.org/develop/data-formats/tl-b-language#constructors) (or operation ids) for each acceptable message to contract, defined as the first 32 bits of the parsed message payload cell.
-So you if you know standard of a given contract, you can determine the type of message to it (for example, NFT item transfer) by parsing the first 32 bits of message body. 
+So, if you know the standard of a given contract, you can determine the type of message to it (for example, NFT item transfer) by parsing the first 32 bits of message body. 
 
 Anton allows you to define the contract interface in just one JSON schema. 
 Format of every schema is described in detail in [abi/README.md](abi/README.md). 
